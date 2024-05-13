@@ -31,7 +31,7 @@ namespace Projeto
             if (saldo - valor > -limite)
             {
                 saldo -= valor;
-                Transacoes.Add(new Transacao(valor, 'S'));
+                Transacoes.Add(new Transacao(valor, 'S', this));
                 return true;
             }
             return false;
@@ -41,7 +41,7 @@ namespace Projeto
             if (valor > 0)
             {
                 saldo += valor;
-                Transacoes.Add(new Transacao(valor, 'D'));
+                Transacoes.Add(new Transacao(valor, 'D', this));
                 return true;
             }
             return false;

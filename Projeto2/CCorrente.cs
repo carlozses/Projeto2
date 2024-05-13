@@ -8,7 +8,7 @@ using System.Transactions;
 
 namespace Projeto
 {
-    public class CCorrente
+    public class CCorrente : Conta
     {
         public bool especial;
         public CCorrente(string numero, double limite) : this()

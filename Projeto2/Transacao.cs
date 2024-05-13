@@ -16,6 +16,7 @@ namespace Projeto
         {
             this.valor = valor;
             this.tipo = tipo;
+            this.conta = conta;
         }
     }
 }
