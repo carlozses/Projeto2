@@ -8,14 +8,16 @@ using System.Threading.Tasks;
 
 namespace Projeto
 {
-    public class CPoupanca
+    public class CPoupanca : Conta
     {
         public CPoupanca() : base(){
-            
+            this.saldo = 0;
+            this.status = true;
+            Transacoes = new List<Transacao>();
+            this.limite = 0;
         }
         public CPoupanca(string numero) : this()
         {
-            this.limite = 0;
             this.numero = numero;
         }
     }

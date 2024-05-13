@@ -18,7 +18,9 @@ namespace Projeto
         }
         public CCorrente() : base()
         {
-
+            this.saldo = 0;
+            this.status = true;
+            Transacoes = new List<Transacao>();
         }
 
     }
