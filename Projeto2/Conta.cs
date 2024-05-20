@@ -23,7 +23,6 @@ namespace Projeto
         }
         public Conta(string numero) : this()
         {
-            this.limite = limite;
             this.numero = numero;
         }
         public bool Sacar(double valor)
