@@ -10,7 +10,12 @@ namespace Projeto
 {
     public class CCorrente : Conta
     {
-        public bool especial;
+        private bool especial;
+        public bool Especial
+        {
+            get => this.especial; 
+            set=> this.especial = value;
+        }
         public CCorrente(string numero, double limite) : base(numero)
         {
             this.limite = limite;
